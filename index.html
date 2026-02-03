@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-разработчик | Создаю сайты, которые приносят клиентов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <span class="logo-bracket"><</span>dev<span class="logo-bracket">/></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="#process" class="nav-link">Процесс</a></li>
+                    <li><a href="#contact" class="nav-link nav-link--cta">Связаться</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow--1"></div>
+            <div class="hero-glow hero-glow--2"></div>
+            <div class="hero-glow hero-glow--3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge fade-in">
+                    <span class="badge-dot"></span>
+                    <span>Открыт для новых проектов</span>
+                </div>
+                <h1 class="hero-title fade-in">
+                    Создаю сайты,<br>
+                    <span class="text-gradient">которые приносят клиентов</span>
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Landing page, корпоративные сайты, сайты для бизнеса под ключ.<br>
+                    Современный дизайн, чистый код, результат.
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="#contact" class="btn btn--primary">
+                        <span>Заказать сайт</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#portfolio" class="btn btn--secondary">
+                        <span>Смотреть работы</span>
+                    </a>
+                </div>
+                <div class="hero-stats fade-in">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Выполненных проектов</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">В срок</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Рейтинг</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Обо мне</span>
+                <h2 class="section-title">Почему мне можно доверять<br>ваш проект</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Ответственность</h3>
+                    <p>Беру на себя полный цикл разработки. От первой встречи до запуска и поддержки. Не пропадаю, не затягиваю сроки.</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Результат</h3>
+                    <p>Мне важно не просто "сделать сайт", а создать инструмент, который решает ваши бизнес-задачи и приносит клиентов.</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Коммуникация</h3>
+                    <p>Объясняю сложное простым языком. На связи каждый день. Показываю промежуточные результаты, чтобы вы всегда знали, что происходит.</p>
+                </div>
+            </div>
+            </div>
+            <div class="about-text reveal">
+                <p>Привет! Я Кирилл, веб-разработчик, специализируюсь на создании современных сайтов для бизнеса. Работаю с HTML, CSS, JavaScript — без конструкторов и шаблонов. Каждый проект уникален, потому что уникален каждый бизнес.</p>
+                <p>Постоянно учусь и развиваюсь, слежу за трендами веб-разработки. Для вас это означает свежие решения и современный подход.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section section--dark" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Услуги</span>
+                <h2 class="section-title">Что я делаю</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                        <span class="service-price">от 25 000 ₽</span>
+                    </div>
+                    <h3 class="service-title">Лендинг под ключ</h3>
+                    <p class="service-desc">Одностраничный сайт для продажи услуги или товара. Продающий текст, призывы к действию, формы захвата.</p>
+                    <div class="service-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-text">Поток заявок из интернета</span>
+                    </div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <span class="service-price">от 45 000 ₽</span>
+                    </div>
+                    <h3 class="service-title">Сайт для бизнеса</h3>
+                    <p class="service-desc">Многостраничный корпоративный сайт. О компании, услуги, портфолио, контакты. Всё для представления бизнеса онлайн.</p>
+                    <div class="service-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-text">Профессиональный имидж компании</span>
+                    </div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <span class="service-price">от 35 000 ₽</span>
+                    </div>
+                    <h3 class="service-title">Редизайн сайта</h3>
+                    <p class="service-desc">Обновление устаревшего сайта. Современный дизайн, улучшение юзабилити, оптимизация скорости загрузки.</p>
+                    <div class="service-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-text">Рост конверсии в 2-3 раза</span>
+                    </div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                <path d="M2 2l7.586 7.586"/>
+                                <circle cx="11" cy="11" r="2"/>
+                            </svg>
+                        </div>
+                        <span class="service-price">от 15 000 ₽</span>
+                    </div>
+                    <h3 class="service-title">Доработка сайта</h3>
+                    <p class="service-desc">Добавление новых блоков, страниц, функционала на существующий сайт. Исправление ошибок и багов.</p>
+                    <div class="service-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-text">Сайт работает как нужно</span>
+                    </div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <span class="service-price">от 5 000 ₽</span>
+                    </div>
+                    <h3 class="service-title">Формы и аналитика</h3>
+                    <p class="service-desc">Подключение форм обратной связи, Telegram-уведомлений, Google Analytics, Яндекс.Метрики, настройка целей.</p>
+                    <div class="service-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-text">Контроль эффективности сайта</span>
+                    </div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <span class="service-price">от 3 000 ₽/мес</span>
+                    </div>
+                    <h3 class="service-title">Поддержка сайта</h3>
+                    <p class="service-desc">Регулярные обновления, исправление ошибок, добавление новых разделов, консультации по работе сайта.</p>
+                    <div class="service-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-text">Сайт всегда в рабочем состоянии</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Портфолио</span>
+                <h2 class="section-title">Мои работы</h2>
+            </div>
+            <div class="portfolio-grid portfolio-grid--4">
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder portfolio-placeholder--1">
+                            <span>Landing Page</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" onclick="event.preventDefault(); showNotification('Скоро добавлю ссылку на проект')">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Сайт клиники эстетической медицины</h3>
+                        <p>Лендинг для привлечения клиентов на процедуры. Форма записи, онлайн-оплата, интеграция с CRM.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Адаптив</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder portfolio-placeholder--2">
+                            <span>E-commerce</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" onclick="event.preventDefault(); showNotification('Скоро добавлю ссылку на проект')">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Интернет-магазин электроники</h3>
+                        <p>Каталог товаров, корзина, фильтры, поиск. Оптимизирован под высокую конверсию.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Вёрстка</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder portfolio-placeholder--3">
+                            <span>Corporate</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" onclick="event.preventDefault(); showNotification('Скоро добавлю ссылку на проект')">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Корпоративный сайт строительной компании</h3>
+                        <p>Презентация услуг, портфолио объектов, калькулятор стоимости, формы заявок.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Дизайн</span>
+                            <span class="tag">Вёрстка</span>
+                            <span class="tag">Анимации</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder portfolio-placeholder--5">
+                            <span>Personal</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" onclick="event.preventDefault(); showNotification('Скоро добавлю ссылку на проект')">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Персональный сайт фотографа</h3>
+                        <p>Портфолио работ, услуги, отзывы клиентов, интеграция с Instagram.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Галерея</span>
+                            <span class="tag">Адаптив</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section class="why-me section section--dark" id="why-me">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Преимущества</span>
+                <h2 class="section-title">Почему стоит выбрать меня</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-item reveal">
+                    <div class="why-number">01</div>
+                    <div class="why-content">
+                        <h3>Индивидуальный подход</h3>
+                        <p>Не использую шаблоны и конструкторы. Каждый сайт создаётся с нуля под ваши задачи и целевую аудиторию.</p>
+                    </div>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">02</div>
+                    <div class="why-content">
+                        <h3>Быстрая связь</h3>
+                        <p>Отвечаю в течение нескольких часов. На всех этапах проекта вы знаете, что происходит и когда будет результат.</p>
+                    </div>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">03</div>
+                    <div class="why-content">
+                        <h3>Чистый код</h3>
+                        <p>Работаю с HTML, CSS, JavaScript без лишних библиотек. Сайт загружается быстро и работает стабильно.</p>
+                    </div>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">04</div>
+                    <div class="why-content">
+                        <h3>Адаптив под телефоны</h3>
+                        <p>Более 60% трафика — с мобильных устройств. Все сайты отлично выглядят на любых экранах.</p>
+                    </div>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">05</div>
+                    <div class="why-content">
+                        <h3>Понимание задач бизнеса</h3>
+                        <p>Мне важно не просто сделать красивую картинку, а создать инструмент, который решает ваши бизнес-задачи.</p>
+                    </div>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">06</div>
+                    <div class="why-content">
+                        <h3>Поддержка после запуска</h3>
+                        <p>30 дней бесплатной поддержки после сдачи проекта. Помогаю с размещением, настройкой аналитики, мелкими правками.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Процесс</span>
+                <h2 class="section-title">Как я работаю</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step reveal">
+                    <div class="step-marker">
+                        <span class="step-number">1</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Обсуждаем задачу</h3>
+                        <p>Знакомимся, выясняем цели бизнеса, целевую аудиторию, конкурентов. Определяем, какой результат нужен.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">
+                        <span class="step-number">2</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Предлагаю структуру</h3>
+                        <p>Создаю прототип сайта — схему расположения блоков. Согласовываем, вносим правки, утверждаем.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">
+                        <span class="step-number">3</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Делаю дизайн и вёрстку</h3>
+                        <p>Создаю уникальный дизайн сайта и верстаю его. Показываю промежуточные результаты на каждом этапе.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">
+                        <span class="step-number">4</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Вносим правки</h3>
+                        <p>Два раунда правок включены в стоимость. Учитываю ваши пожелания, доводим до идеала.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">
+                        <span class="step-number">5</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Сдаю готовый сайт</h3>
+                        <p>Размещаю на хостинге, подключаю домен, настраиваю аналитику. Передаю доступы, обучаю работе с сайтом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section" id="contact">
+        <div class="cta-bg">
+            <div class="cta-glow cta-glow--1"></div>
+            <div class="cta-glow cta-glow--2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">Готов обсудить<br>ваш проект</h2>
+                <p class="cta-text">Расскажите о своём бизнесе и задачах. Я предложу решение и рассчитаю стоимость.</p>
+                <a href="https://t.me/kirill_WebCode" class="btn btn--telegram" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    <span>Написать в Telegram</span>
+                </a>
+                <p class="cta-note">Отвечу в течение дня</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-bracket"><</span>dev<span class="logo-bracket">/></span>
+                    </a>
+                    <p>Создаю сайты, которые работают на ваш бизнес</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" class="footer-link">Обо мне</a>
+                    <a href="#services" class="footer-link">Услуги</a>
+                    <a href="#portfolio" class="footer-link">Портфолио</a>
+                    <a href="#contact" class="footer-link">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/kirill_WebCode" class="social-link" target="_blank" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:your@email.com" class="social-link" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub" onclick="event.preventDefault(); showNotification('Скоро добавлю ссылку на GitHub')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <span class="notification-text"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
